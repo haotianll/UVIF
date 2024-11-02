@@ -1,6 +1,6 @@
 # UVIF: Unified Video and Image Representation for Boosted Video Face Forgery Detection
 
-[//]: # (This repository is the official implementation of paper: [Unified Video and Image Representation for Boosted Video Face Forgery Detection]&#40;&#41;)
+This repository is the official implementation of paper: [Unified Video and Image Representation for Boosted Video Face Forgery Detection](https://doi.org/10.3233/FAIA240548)
 
 ## Environment
 
@@ -22,7 +22,7 @@ mim install -e .
 
 ## Dataset Preparation
 
-We preform experiments on [ForgeryNet](https://yinanhe.github.io/projects/forgerynet.html#)
+We perform experiments on [ForgeryNet](https://yinanhe.github.io/projects/forgerynet.html#)
 and [DFDC (preview)](https://arxiv.org/abs/1910.08854).
 
 We use [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface) to detect face bounding boxes from each video clip
@@ -85,7 +85,7 @@ this [link](https://drive.google.com/drive/folders/1XrutVt4bVFGoMm3kmQvZ0yG3PN5f
 #### ForgeryNet
 
 | method                | config                         | mAcc  | AUC   |
-|-----------------------|--------------------------------|-------|-------|
+| --------------------- | ------------------------------ | ----- | ----- |
 | Baseline - Res50      | video_r50_forgerynet.py        | 80.89 | 88.66 |
 | Baseline - Res101     | video_r101_forgerynet.py       | 81.48 | 88.08 |
 | Baseline - ConvNeXt-T | video_convnext-t_forgerynet.py | 81.56 | 88.43 |
@@ -96,20 +96,24 @@ this [link](https://drive.google.com/drive/folders/1XrutVt4bVFGoMm3kmQvZ0yG3PN5f
 #### DFDC (preview)
 
 | method        | config             | Acc   | AUC   |
-|---------------|--------------------|-------|-------|
+| ------------- | ------------------ | ----- | ----- |
 | UVIF - Res50  | uvif_r50_dfdcp.py  | 83.40 | 93.54 |
 | UVIF - Res101 | uvif_r101_dfdcp.py | 87.00 | 94.95 |
 
-
-[//]: # (## Citation)
-
-[//]: # (If you find this code useful in your research, please consider citing:)
-
-[//]: # (```latex)
-
-[//]: # (```)
-
 ## Acknowledgment
 
-The code is based on [MMPretrain](https://github.com/open-mmlab/mmpretrain)
-and [MMAction2](https://github.com/open-mmlab/mmaction2). Thanks for their contributions.
+The code is based on [MMPretrain](https://github.com/open-mmlab/mmpretrain) and [MMAction2](https://github.com/open-mmlab/mmaction2). Thanks for their contributions.
+
+## Citation
+
+If you find this repository useful in your research, please consider citing:
+
+```latex
+@inproceedings{liu2024uvif,
+  title={Unified Video and Image Representation for Boosted Video Face Forgery Detection},
+  author={Liu, Haotian and Pan, Chenhui and Liu, Yang and Zhao, Guoying and Li, Xiaobai},
+  booktitle={ECAI},
+  pages={673-680},
+  year={2024},
+}
+```
